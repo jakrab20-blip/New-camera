@@ -7,6 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Unzip project
+        run: unzip -q steadycam-project-v1.zip
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
